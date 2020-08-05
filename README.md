@@ -1,73 +1,26 @@
-<<<<<<< HEAD
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Introduction
 
-## Available Scripts
+This **React** app contains four different widgets:
 
-In the project directory, you can run:
+1. A translate widget using [Google Translate API](https://cloud.google.com/translate)
 
-### `npm start`
+   ![Translate Widget.png](https://i.loli.net/2020/08/05/LyblAxXJoU2taBh.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. A wiki search widget using [Wikepedia API](https://www.mediawiki.org/wiki/API:Main_page)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+   ![Wiki Widget.png](https://i.loli.net/2020/08/05/iLCZd4Tpsx61v7Y.png)
 
-### `npm test`
+3. A photo search widget using [Unsplash API](https://unsplash.com/developers)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ![Photo Widget.png](https://i.loli.net/2020/08/05/37iXTd9qkC6JEw4.png)
 
-### `npm run build`
+4. A youtube widget using [Youtube Data API v3](https://developers.google.com/youtube/v3)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Other tools & libraries include:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1. [Bootstrap Material Design](https://fezvrasta.github.io/bootstrap-material-design/) - UI Library
+2. [Axios](https://github.com/axios/axios) - HTTP Library
+3. [Faker.js](https://www.npmjs.com/package/faker) - Random String Generator
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-=======
-# React-APIs-Widgets
-A series of widgets in React building with different APIs.
->>>>>>> a89f5d6bd0f9f87b31b0a95853bbaecfabbb263b
+[Live Demo](https://react-api-s-widgets.vercel.app)
+[Source Code](https://github.com/fssongwei/React-APIs-Widgets)
