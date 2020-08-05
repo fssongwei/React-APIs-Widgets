@@ -16,6 +16,8 @@ This **React** app contains four different widgets:
 
 4. A youtube widget using [Youtube Data API v3](https://developers.google.com/youtube/v3)
 
+   ![Youtube Widget.png](https://i.loli.net/2020/08/05/MJBP5OfcsyxFVQb.png)
+
 Other tools & libraries include:
 
 1. [Bootstrap Material Design](https://fezvrasta.github.io/bootstrap-material-design/) - UI Library
