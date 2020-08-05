@@ -3,7 +3,7 @@ import Axios from "axios";
 import Dropdown from "./Dropdown";
 import DebouncedTextField from "./DebouncedTextField";
 
-const GoogleTranslateAPIKey = "AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM";
+const GoogleTranslateAPIKey = process.env.REACT_APP_GOOGLE_TRANSLATE_API_KEY;
 
 const Translate = () => {
   const options = [
@@ -54,8 +54,6 @@ const Translate = () => {
 
   return (
     <div>
-      {/* <h3>Translate Widget</h3> */}
-
       <div className="row">
         <div className="col-md-6 p-0">
           <div className="card">
