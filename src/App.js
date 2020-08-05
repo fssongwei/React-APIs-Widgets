@@ -1,26 +1,84 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, Fragment } from "react";
+import Search from "./components/Search";
+import Translate from "./components/Translate";
+import Photo from "./components/Photo";
+import Youtube from "./components/youtube/Youtube";
 
-function App() {
+const App = () => {
+  const [current, setCurrent] = useState("translate");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Fragment>
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+        <span className="navbar-brand">
+          <i className="fas fa-wrench"></i> Widgets
+        </span>
+        <button
+          className="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li
+              className={`nav-item ${current === "translate" ? "active" : ""}`}
+            >
+              <span
+                className="nav-link"
+                onClick={() => {
+                  setCurrent("translate");
+                }}
+              >
+                Translate
+              </span>
+            </li>
+
+            <li className={`nav-item ${current === "wiki" ? "active" : ""}`}>
+              <span
+                className="nav-link"
+                onClick={() => {
+                  setCurrent("wiki");
+                }}
+              >
+                Wiki
+              </span>
+            </li>
+
+            <li className={`nav-item ${current === "photo" ? "active" : ""}`}>
+              <span
+                className="nav-link"
+                onClick={() => {
+                  setCurrent("photo");
+                }}
+              >
+                Photo
+              </span>
+            </li>
+
+            <li className={`nav-item ${current === "youtube" ? "active" : ""}`}>
+              <span
+                className="nav-link"
+                onClick={() => {
+                  setCurrent("youtube");
+                }}
+              >
+                Youtube
+              </span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div className="container mt-5">
+        {current === "translate" && <Translate />}
+        {current === "wiki" && <Search />}
+        {current === "photo" && <Photo />}
+        {current === "youtube" && <Youtube />}
+      </div>
+    </Fragment>
   );
-}
+};
 
 export default App;
